@@ -63,11 +63,11 @@ def innkeeper():
     print("behind the bar washing mugs. You go up and say hello, flash a couple coins ")
     print("and ask if he knows anything about a group of ambassadors that may have ")
     print("stopped in recently.")
+    ##fix this in github
     print("The barkeep looks at the coins and tells you that you might have better")
-    print("luck at the 
-          on the outskirts of town. He then winks and takes your gold. ")
+    print("luck at the inn on the outskirts of town. He then winks and takes your gold. ")
     print("Would you like to follow up on the barkeeps advice?")
-    option = input("Type 'yes' to go to the hotel or 'no' to try looking for the carriages instead. ")
+    option = input("Type 'yes' to go to the inn or 'no' to try looking for the carriages instead. ")
     print(" ")
     if (option == "yes"):
         yeshotel()
@@ -86,7 +86,7 @@ def yeshotel():
     Depending on the users choice a different function is called.
     """
     print(" ")
-    print("You arrive at the large surprisingly fancy hotel and find the ")
+    print("You arrive at the large surprisingly fancy inn and find the ")
     print("ambassadors sitting in the restaurant below. ")
     print("Do you go up to speak with them or stay hidden and spy on them?")
     option = input("Type 'spy' to spy on them or 'talk' to speak with them. ")
@@ -254,17 +254,17 @@ def gorelative():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("You decide to go find the relative who has apparently left for the woods. As you head to the forest ")
-    print("you find a wizard standing at the creek.")
+    print("You decide to go find the relative who has apparently left for the woods.")
+    print("As you head to the forest, you find a wizard standing at the creek.")
     print("You aren’t sure where the jewel has gone, but decide maybe the wizard knows something.")
     print("He tells you that he saw a mysterious figure heading for a nearby creek the night before.")
-    print("The wizard then offers to show you the creek, but can't help you more than that. ")
-    print("........ ")
+    print("The wizard then offers to show you the creek, but can't help you more than that.")
+    print("........")
     print("After a couple of hours of walking you find the creek.")
     cross = input("Do you stay and invesitgate or cross the creek? Type 'creek' to cross the creek or 'stay' to stay. ")
     print(" ")
     if (cross == "creek"):
-        print("You jump successfully across the creek and leave the wizard behind..")
+        print("You jump successfully across the creek and leave the wizard behind.")
         troll()
     elif (cross == "stay"):
         print("The wizard betrays you and kills you with a fire bolt from his wand.")
@@ -282,8 +282,8 @@ def troll():
     """
     print("")
     print("You go to a bridge, where you meet a troll.")
-    print("The troll is annoyed because you woke him up from his nap. But you decide to bother him more, and ask if he ")
-    print("has heard anything about a missing jewel, or relative of the princess. ")
+    print("The troll is annoyed because you woke him up from his nap.")
+    print("You decide to bother him more, and ask if he has heard anything about a missing jewel, or relative of the princess.")
     print("")
     print("He tells you that he met the relative while they were on their way to a nearby a mountain.") 
     print("")
@@ -360,9 +360,9 @@ def town():
     print("After knocing on his door you question him about the jewel asking where he's keeping it. ")
     print("He is very offended that you thought he would steal the jewel.")
     print("He tells you that he doesn't have the jewel but had heard others from the ball were also staying in Old Ashton. ")
-    print("He tells you 'If you head up to the hotel on the outskirts there are some diplomats staying there, they were at the ball too'.")
+    print("He tells you 'If you head up to the inn on the outskirts there are some diplomats staying there, they were at the ball too'.")
     print("")
-    move = input("Type 'go' to head to the hotel or 'stay' to stay with the relative. ")
+    move = input("Type 'go' to head to the inn or 'stay' to stay with the relative. ")
     print("")
     if (move == "stay"):
         print("The relative kills you since you thought he stole the jewel.")
