@@ -253,17 +253,14 @@ def gorelative():
     The user is first prompted to either a creek or staying at the location.
     Depending on which option the user chooses, a new function will be called.
     """
-    print("")
-    print("You decide to go find the relative who has apparently left for the woods. As you head to the forest ")
-    print("you find a wizard standing at the creek.")
-    print("You aren’t sure where the jewel has gone, but decide maybe the wizard knows something.")
-    print("He tells you that he saw a mysterious figure heading for a nearby creek the night before.")
-    print("The wizard then offers to show you the creek, but can't help you more than that. ")
-    print("........ ")
-    print("After a couple of hours of walking you find the creek.")
-    cross = input("Do you stay and invesitgate or cross the creek? Type 'creek' to cross the creek or 'stay' to stay. ")
+    print(" ")
+    print("The jewel has been stolen. There is a wizard standing at the creek.")
+    print("You aren’t sure where the jewel has left.")
+    print("You see a jealous relative leave the party and hear he left for a creek.")
+    print("You come to a creek.")
+    cross = input("Type 'creek' to cross the creek or 'stay' to stay. ")
     if (cross == "creek"):
-        print("You jump successfully across the creek and leave the wizard behind..")
+        print("You move onto the troll.")
         troll()
     elif (cross == "stay"):
         print("The wizard betrays you and kills you with a fire bolt from his wand.")
@@ -280,8 +277,11 @@ def troll():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("You go to a bridge, where you meet a troll.")
+    print("You now meet a troll.")
     print("The troll is annoyed because you woke him up from his nap.")
+    print("He asks why you woke him up from his nap.")
+    print("You tell him that a wizard said he spoke with you.")
+    print("The troll chortles, that fool is always getting me into trouble.")
     print("He tells you that the relative has gone near a mountain.") 
     move = input("Type 'mountain' to go to the mountain or 'stay' to stay with the troll. ")
     if (move == "stay"):
@@ -302,8 +302,12 @@ def dragon():
     """
     print("")
     print("You go to a mountain, where you meet a dragon.")
-    print("The dragon is hungry")
+    print("The dragon is famished and hasn't eaten in months.")
+    print("The dragon is curious why you got so close to his mountain.")
+    print("The dragon is impressed by your courage and decides to help.")
     print("He tells you that the relative has visited a phoenix.")
+    print("The dragon does not like like you sticking around the mountain.")
+    print("The longer you stay with the dragon, the hungrier he gets.")
     move = input("Type 'phoenix' to move onto the phoenix or 'stay' to stay with the dragon. ")
     if (move == "stay"):
         print("The dragon doesn't like you staying so he eats you.")
@@ -323,8 +327,14 @@ def phoenix():
     """
     print("")
     print("You go to a misty woods, where you meet a phoenix.")
+    print("The phoenix is frightened that you surprised him.")
+    print("WOOOOOSH.")
+    print("The phoenix bursts into flames, but is reborn from his ashes anew.")
     print("The phoenix is happy for company.")
-    print("The phoenix tells you the relative has gone to town")
+    print("The phoenix dislikes the dragon you previously met.")
+    print("The phoenix wishes to stay clear from his mountain.")
+    print("The phoenix is more than happy to help with your quest.")
+    print("The phoenix tells you the relative has gone to town.")
     move = input("Type 'town' to proceed to the town or 'stay' to stay with the phoenix. ")
     if (move == "stay"):
         print("The phoenix feels threatened, so he lights you on fire.")
