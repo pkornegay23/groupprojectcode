@@ -254,13 +254,16 @@ def gorelative():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("The jewel has been stolen. There is a wizard standing at the creek.")
-    print("You aren’t sure where the jewel has left.")
-    print("You see a jealous relative leave the party and hear he left for a creek.")
-    print("You come to a creek.")
-    cross = input("Type 'creek' to cross the creek or 'stay' to stay. ")
+    print("You decide to go find the relative who has apparently left for the woods. As you head to the forest ")
+    print("you find a wizard standing at the creek.")
+    print("You aren’t sure where the jewel has gone, but decide maybe the wizard knows something.")
+    print("He tells you that he saw a mysterious figure heading for a nearby creek the night before.")
+    print("The wizard then offers to show you the creek, but can't help you more than that. ")
+    print("........ ")
+    print("After a couple of hours of walking you find the creek.")
+    cross = input("Do you stay and invesitgate or cross the creek? Type 'creek' to cross the creek or 'stay' to stay. ")
     if (cross == "creek"):
-        print("You move onto the troll.")
+        print("You jump successfully across the creek and leave the wizard behind..")
         troll()
     elif (cross == "stay"):
         print("The wizard betrays you and kills you with a fire bolt from his wand.")
