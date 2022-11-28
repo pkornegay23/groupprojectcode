@@ -1,5 +1,5 @@
 # groupprojectcode
-Final project code
+
 This final project was created by Natalie Hochhaus, Eleanor Gagnon, and Patrick Kornegay, Jr.
 
 This “choose your own adventure” will be a game that allows a user to choose whatever direction they want in this scenario of finding a stolen jewel. Each choice the user makes will push them forward to complete the game, cause them to turn around, die and/or start over. The user is first prompted to choose between going after a mage, relative, or ambassador.
