@@ -253,14 +253,18 @@ def gorelative():
     The user is first prompted to either a creek or staying at the location.
     Depending on which option the user chooses, a new function will be called.
     """
+    print("")
+    print("You decide to go find the relative who has apparently left for the woods. As you head to the forest ")
+    print("you find a wizard standing at the creek.")
+    print("You aren’t sure where the jewel has gone, but decide maybe the wizard knows something.")
+    print("He tells you that he saw a mysterious figure heading for a nearby creek the night before.")
+    print("The wizard then offers to show you the creek, but can't help you more than that. ")
+    print("........ ")
+    print("After a couple of hours of walking you find the creek.")
+    cross = input("Do you stay and invesitgate or cross the creek? Type 'creek' to cross the creek or 'stay' to stay. ")
     print(" ")
-    print("The jewel has been stolen. There is a wizard standing at the creek.")
-    print("You aren’t sure where the jewel has left.")
-    print("You see a jealous relative leave the party and hear he left for a creek.")
-    print("You come to a creek.")
-    cross = input("Type 'creek' to cross the creek or 'stay' to stay. ")
     if (cross == "creek"):
-        print("You move onto the troll.")
+        print("You jump successfully across the creek and leave the wizard behind..")
         troll()
     elif (cross == "stay"):
         print("The wizard betrays you and kills you with a fire bolt from his wand.")
@@ -277,13 +281,14 @@ def troll():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("You now meet a troll.")
-    print("The troll is annoyed because you woke him up from his nap.")
-    print("He asks why you woke him up from his nap.")
-    print("You tell him that a wizard said he spoke with you.")
-    print("The troll chortles, that fool is always getting me into trouble.")
-    print("He tells you that the relative has gone near a mountain.") 
+    print("You go to a bridge, where you meet a troll.")
+    print("The troll is annoyed because you woke him up from his nap. But you decide to bother him more, and ask if he ")
+    print("has heard anything about a missing jewel, or relative of the princess. ")
+    print("")
+    print("He tells you that he met the relative while they were on their way to a nearby a mountain.") 
+    print("")
     move = input("Type 'mountain' to go to the mountain or 'stay' to stay with the troll. ")
+    print("")
     if (move == "stay"):
         print("The troll doesn't like you staying, so he eats you.")
         death()
@@ -301,14 +306,12 @@ def dragon():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("You go to a mountain, where you meet a dragon.")
-    print("The dragon is famished and hasn't eaten in months.")
-    print("The dragon is curious why you got so close to his mountain.")
-    print("The dragon is impressed by your courage and decides to help.")
-    print("He tells you that the relative has visited a phoenix.")
-    print("The dragon does not like like you sticking around the mountain.")
-    print("The longer you stay with the dragon, the hungrier he gets.")
-    move = input("Type 'phoenix' to move onto the phoenix or 'stay' to stay with the dragon. ")
+    print("After a couple more hours of hard hiking you have almost reached the top of the mountain, where you see a dragon.")
+    print("The dragon is hungry, but you decide to ask her whether she knows anything about the missing jewel or relative. ")
+    print("She tells you that the relative visited a phoenix who happens to be a friend of the dragon.")
+    print("")
+    move = input("Should you go and see what the phoenix knows? Type 'phoenix' to move onto the phoenix or 'stay' to stay with the dragon. ")
+    print("")
     if (move == "stay"):
         print("The dragon doesn't like you staying so he eats you.")
         death()
@@ -326,16 +329,15 @@ def phoenix():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("You go to a misty woods, where you meet a phoenix.")
-    print("The phoenix is frightened that you surprised him.")
-    print("WOOOOOSH.")
-    print("The phoenix bursts into flames, but is reborn from his ashes anew.")
-    print("The phoenix is happy for company.")
-    print("The phoenix dislikes the dragon you previously met.")
-    print("The phoenix wishes to stay clear from his mountain.")
-    print("The phoenix is more than happy to help with your quest.")
-    print("The phoenix tells you the relative has gone to town.")
+    print("Following the dragons advice you return to the forest to find the phoenix. ")
+    print("Perched on a low branch you find him grooming his feathers.")
+    print("You greet him and he is happy for company, so you ask him if he has heard anything about ")
+    print("the missing jewel or relative.")
+    print("The phoenix tells you the relative has gone to Old Ashton, a port town not far from the forest.")
+    print("Should you stay and chat with the phoenix or head to Old Ashton?")
+    print("")
     move = input("Type 'town' to proceed to the town or 'stay' to stay with the phoenix. ")
+    print("")
     if (move == "stay"):
         print("The phoenix feels threatened, so he lights you on fire.")
         death()
@@ -354,11 +356,14 @@ def town():
     Depending on which option the user chooses, a new function will be called.
     """
     print("")
-    print("You go to the town, where you finally meet the relative.")
-    print("The relative is angered that you thought he would steal the jewel.")
-    print("Relative: That's very rude of you to think that I have the jewel.")
-    print("Relative: I don't have the jewel, I heard that it was in a hotel, with some foreign diplomats.")
-    move = input("Type 'go' to move to the hotel or 'stay' to stay with the relative. ")
+    print("You arrive in Old Ashton, where you follow the phoenixs intructions to the townhouse where the relative is staying. ")
+    print("After knocing on his door you question him about the jewel asking where he's keeping it. ")
+    print("He is very offended that you thought he would steal the jewel.")
+    print("He tells you that he doesn't have the jewel but had heard others from the ball were also staying in Old Ashton. ")
+    print("He tells you 'If you head up to the inn on the outskirts there are some diplomats staying there, they were at the ball too'.")
+    print("")
+    move = input("Type 'go' to head to the inn or 'stay' to stay with the relative. ")
+    print("")
     if (move == "stay"):
         print("The relative kills you since you thought he stole the jewel.")
         death()
