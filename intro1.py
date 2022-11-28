@@ -35,7 +35,6 @@ def goambassador():
     print("..........")
     print(" ")
     print("After an afternoon of hard riding you arrive in Old Ashton")
-    ##need to fix this line below in github
     print("You see a tavern, a long main road and many small alleyways and sidestreets.")
     print("The town is surround by steep hils in the back and the sea at the end of the main road.")
     print("What do you want to do?")
@@ -48,7 +47,7 @@ def goambassador():
     elif (option == "carriages"):
         carriages()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         goambassador()
 
 def innkeeper():
@@ -75,7 +74,7 @@ def innkeeper():
     elif (option == "no"):
         carriages()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         innkeeper()
 
 def yeshotel():
@@ -87,7 +86,7 @@ def yeshotel():
     Depending on the users choice a different function is called.
     """
     print(" ")
-    print("You arrive at the large surprisingly fancy in and find the ")
+    print("You arrive at the large surprisingly fancy inn and find the ")
     print("ambassadors sitting in the restaurant below. ")
     print("Do you go up to speak with them or stay hidden and spy on them?")
     option = input("Type 'spy' to spy on them or 'talk' to speak with them. ")
@@ -97,7 +96,7 @@ def yeshotel():
     elif (option == "talk"):
         talkambassador()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         yeshotel()
 
 def spyambassador():
@@ -114,14 +113,14 @@ def spyambassador():
     print("walk hurriedly towards the stables while the others are distracted")
     print(" ")
     print("What should you do? Follow the ambassador or stay and watch the others? ")
-    option = input("Type 'stay' to stay, or 'follow' to follow")
+    option = input("Type 'stay' to stay, or 'follow' to follow. ")
     print(" ")
     if (option == "stay"):
         stayambassador()
     elif (option == "follow"):
         followambassador()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         spyambassador()
 
 def stayambassador():
@@ -146,7 +145,7 @@ def stayambassador():
     elif (option == "no"):
         followambassador()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         stayambassador()
 
 def yescontroversy():
@@ -172,7 +171,7 @@ def yescontroversy():
     elif (option == "no"):
         successfunction1()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         yescontroversy()
 
 def followambassador():
@@ -189,14 +188,14 @@ def followambassador():
     print("leave the stable in the direction of the town. ")
     print("You follow him from a distance as he walks quickly away from the hotel. ")
     print("Should you confront him or keep watch from a distance?")
-    option = input("Type 'confront' to confront the ambassador, or 'follow' to  keep following.")
+    option = input("Type 'confront' to confront the ambassador, or 'follow' to  keep following. ")
     print(" ")
     if (option == "confront"):
         successfunction2()
     elif (option == "follow"):
         jumpdeath()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         followambassador()
 
 def talkambassador():
@@ -218,8 +217,9 @@ def talkambassador():
     elif (option == "no"):
         followambassador()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         talkambassador()
+
 def carriages():
     """This function allows the user to search for the ambassadors carriages.
 
@@ -235,14 +235,14 @@ def carriages():
     print("as you continue along the road you notice a large building slightly on the ")
     print("outskirts of the town, looking out of place as the only well cared for building ")
     print("in the town. Would you like to go check it out or keep looking for the carriages. ")
-    option = input("Type 'building' to check out the building, or 'continue' to keep exploring")
+    option = input("Type 'building' to check out the building, or 'continue' to keep exploring. ")
     print(" ")
-    if (option == "building "):
+    if (option == "building"):
         yeshotel()
     elif (option == "continue"):
         jumpdeath()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         carriages()
 
 ##Patrick's Code
@@ -536,7 +536,7 @@ def sign():
       print("You now proceed to the hotel")
       yeshotel()
     else:
-      print("Invalid answer, why don't you try again.")
+      print("Invalid answer, why don't you try again?")
       sign()
 
 ##death functions
@@ -555,6 +555,9 @@ def death():
         start()
     elif (option == "no"):
         endgame()
+    else:
+      print("Invalid answer, why don't you try again?")
+      death()
 
 #Specific death function
 def jumpdeath():
@@ -576,13 +579,13 @@ def jumpdeath():
     print("Game over.")
     print("You have been killed.")
     print(" ")
-    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game.")
+    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game. ")
     if (option == "yes"):
         start()
     elif (option == "no"):
         endgame()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         jumpdeath()
 
 ##success funtion
@@ -602,14 +605,14 @@ def successfunction1():
     print("You ask where the jewel is and it turns out he has kept it in his pocket, much to the shock of his compatriots. ")
     print(" ")
     print("Good work! You have found the jewel and can return it to the palace")
-    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game.")
+    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game. ")
     print(" ")
     if (option == "yes"):
         start()
     elif (option == "no"):
         endgame()
     else:
-        print("Invalid answer, why don't you try again")
+        print("Invalid answer, why don't you try again?")
         successfunction1()
 
 def successfunction2():
@@ -624,14 +627,14 @@ def successfunction2():
     print("The ambassador had no idea he was being followed and is easily overpowered. ")
     print("You demand to know where the jewel is and he shows you the pouch. ")
     print("Good work! You have found the jewel and can return it to the palace! ")
-    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game.")
+    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game. ")
     print(" ")
     if (option == "yes"):
         start()
     elif (option == "no"):
         endgame()
     else:
-        print("Invalid answer, Why don't you try again")
+        print("Invalid answer, Why don't you try again?")
         successfunction2()
 
 #end function
@@ -650,11 +653,10 @@ def start():
     The user is prompted to enter their name into the game. Then the function 
     calls the introduction functions to begin the choose your own adventure game.
     """
+    name = input("What's your name? ")
+    start()
     print("")
     print("Welcome to your adventure")
     print("")
     print("Your name is "+name+", and you're a poor peasant who's trying to find a stolen jewel.")
     intro()
-
-name = input("What's your name? ")
-start()
