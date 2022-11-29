@@ -244,6 +244,34 @@ def carriages():
     else:
         print("Invalid answer, Why don't you try again?")
         carriages()
+        
+def jumpdeath():
+    """This is a specific death function for when the user dies in the ambassador
+     branch.
+
+    If the user chooses a incorrectly when following the ambassador or
+    looking for the carriages the user will be sent to this death function. The 
+    user is then asked if they would like to begin again or end the game.
+    Depending on which option the user chooses a different function is called.
+    """
+    print(" ")
+    print("as you continue through a dark alley you hear something behind you.")
+    print("you trun around just in time to see a group of bandits closing in on and as you begin to run, ")
+    print("you wonder are these the culprits?")
+    print("unfortuenately you will never know because just as you see a larger road one of the bandits comes ")
+    print("out from in front blocking your escape, and the rest close in from behind. ")
+    print(" ")
+    print("Game over.")
+    print("You have been killed.")
+    print(" ")
+    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game. ")
+    if (option == "yes"):
+        start()
+    elif (option == "no"):
+        endgame()
+    else:
+        print("Invalid answer, Why don't you try again?")
+        jumpdeath()        
 
 ##Patrick's Code
 def gorelative():
@@ -533,6 +561,7 @@ def two():
     else:
         print("Invalid answer. Why don't you try again?")
         two()
+        
 def sign():
     """The user returns to the town to look for the ambassador.
 
@@ -557,7 +586,7 @@ def sign():
       print("Invalid answer, why don't you try again?")
       sign()
 
-##death functions
+##death function written by Natalie
 def death():
     """This is a general death function for when the user dies.
 
@@ -577,36 +606,7 @@ def death():
       print("Invalid answer, why don't you try again?")
       death()
 
-#Specific death function
-def jumpdeath():
-    """This is a specific death function for when the user dies in the ambassador
-     branch.
-
-    If the user chooses a incorrectly when following the ambassador or
-    looking for the carriages the user will be sent to this death function. The 
-    user is then asked if they would like to begin again or end the game.
-    Depending on which option the user chooses a different function is called.
-    """
-    print(" ")
-    print("as you continue through a dark alley you hear something behind you.")
-    print("you trun around just in time to see a group of bandits closing in on and as you begin to run, ")
-    print("you wonder are these the culprits?")
-    print("unfortuenately you will never know because just as you see a larger road one of the bandits comes ")
-    print("out from in front blocking your escape, and the rest close in from behind. ")
-    print(" ")
-    print("Game over.")
-    print("You have been killed.")
-    print(" ")
-    option = input("Would you like to play again? Type 'yes' to start over, or 'no' to end the game. ")
-    if (option == "yes"):
-        start()
-    elif (option == "no"):
-        endgame()
-    else:
-        print("Invalid answer, Why don't you try again?")
-        jumpdeath()
-
-##success funtion
+##success functions written by Eleanor
 def successfunction1():
     """This is the first success function.
     
@@ -655,7 +655,7 @@ def successfunction2():
         print("Invalid answer, Why don't you try again?")
         successfunction2()
 
-#end function
+#end function written by Eleanor
 def endgame():
   """This is the function that ends the game.
 
@@ -664,7 +664,7 @@ def endgame():
   print("")
   print("Thank you for playing")
 
-##start function
+##start function written by Natalie
 def start():
     """This is the function that starts the game.
 
