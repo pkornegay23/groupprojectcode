@@ -549,7 +549,7 @@ def two():
     """
     print("")
     print("As you open the door you notice the mage is sitting in the chair")
-    why = input("Mage: why have you come here? ")
+    why = input("Mage: what are you looking for? ")
     print("Mage: I do not have the "+why+" that you are looking for.")
     print("Mage: I did see the ambassador with the "+why+" when I passed through the town. Maybe look there?")
     goback = input("Type 'yes' to go into the town or 'no' to not go to the town. ")
