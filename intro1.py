@@ -672,9 +672,10 @@ def start():
     calls the introduction functions to begin the choose your own adventure game.
     """
     name = input("What's your name? ")
-    start()
     print("")
     print("Welcome to your adventure")
     print("")
     print("Your name is "+name+", and you're a poor peasant who's trying to find a stolen jewel.")
     intro()
+start()
+
