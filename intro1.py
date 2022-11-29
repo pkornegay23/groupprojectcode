@@ -1,4 +1,4 @@
-##intro
+##intro written by Natalie
 def intro():
     """The user is introduced to the game.
 
